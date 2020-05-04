@@ -15,8 +15,51 @@ export const Main = () => {
         </div>
       </div>
       <div className="container">
+        <div className="mobile-content">
+          <div className="form-text">
+            <h2>Regain Confidence</h2>
+            <h2>Stay In Your Home Longer</h2>
+          </div>
+          <form action="">
+            <input
+              className="input"
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Full Name"
+            />
+            <br />
+            <input
+              className="input"
+              type="text"
+              id="usersPhone"
+              name="usersPhone"
+              placeholder="Phone"
+            />
+            <br />
+            <input
+              className="input"
+              type="text"
+              id="email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <br />
+            <input
+              className="input"
+              type="text"
+              id="zipcode"
+              name="zipcode"
+              placeholder="Your Zip"
+            />
+            <br />
+            <button className="btn">Request More Information</button>
+            <h5>100% PRIVACY GUARANTEED</h5>
+            <h6>WE DO NOT SELL OR RENT YOUR PERSONAL INFORMATION</h6>
+          </form>
+        </div>
         <div className="row">
-          <div className="col-6">
+          <div className="col-lg-6 col-md-6 col-sm-12">
             <div className="brand">
               <h1>
                 Ella Brand <br />
@@ -48,7 +91,7 @@ export const Main = () => {
               />
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-lg-6 col-md-6 col-sm-12">
             <div className="content">
               <div className="form-text">
                 <h2>Regain Confidence</h2>
