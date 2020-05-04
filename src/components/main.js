@@ -20,12 +20,12 @@ export const Main = () => {
             <div className="brand">
               <h1>
                 Ella Brand <br />
-                Walk-in Bathtubs
+                <mark>Walk-in</mark> Bathtubs
               </h1>
             </div>
             <div className="text">
-              <h2>Financing</h2>
-              <h3>As low as $99.00 per/month</h3>
+              <h2 className="text2">Financing</h2>
+              <h3 className="text3">As low as $99.00 per/month</h3>
               <h3>with approved credit</h3>
             </div>
             <div className="images">
@@ -51,8 +51,8 @@ export const Main = () => {
           <div className="col-6">
             <div className="content">
               <div className="form-text">
-                <h3>Regain Confidence</h3>
-                <h3>Stay In Your Home Longer</h3>
+                <h2>Regain Confidence</h2>
+                <h2>Stay In Your Home Longer</h2>
               </div>
               <form action="">
                 <input
@@ -87,14 +87,8 @@ export const Main = () => {
                   placeholder="Your Zip"
                 />
                 <br />
-                <input
-                  className="input"
-                  type="button"
-                  id="information"
-                  name="information"
-                  placeholder="Request More Information"
-                />
-                <h6>100% PRIVACY GUARANTEED</h6>
+                <button className="btn">Request More Information</button>
+                <h5>100% PRIVACY GUARANTEED</h5>
                 <h6>WE DO NOT SELL OR RENT YOUR PERSONAL INFORMATION</h6>
               </form>
             </div>
