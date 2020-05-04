@@ -72,11 +72,7 @@ export const Main = () => {
               <h3>with approved credit</h3>
             </div>
             <div className="images">
-              <img
-                className="img-fluid"
-                src="../../images/bath.png"
-                alt="bath"
-              />
+              <img className="img-big" src="../../images/bath.png" alt="bath" />
             </div>
             <div className="arrow">
               <img
