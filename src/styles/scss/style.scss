@@ -1,6 +1,12 @@
+@import "./includes/main";
+
 body {
   margin: 0;
   padding: 0;
-  background-color: blue;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(7, 7, 112),
+    rgb(6, 133, 207)
+  );
   color: white;
 }

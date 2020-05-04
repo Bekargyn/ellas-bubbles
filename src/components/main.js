@@ -3,13 +3,15 @@ import React from "react";
 export const Main = () => {
   return (
     <div className="main">
-      <div className="top">
-        <div className="logo">
+      <div className="row">
+        <div className="col-4">
           <img className="img-fluid" src="../../images/logo.png" alt="logo" />
         </div>
-        <div className="phone">
-          <img src="../../images/phone.png" alt="phone" />
-          <h4>(800) 480-6850</h4>
+        <div className="col-8">
+          <div className="phone">
+            <img src="../../images/phone.png" alt="phone" />
+            <h4>(800) 480-6850</h4>
+          </div>
         </div>
       </div>
       <div className="container">
@@ -52,7 +54,49 @@ export const Main = () => {
                 <h3>Regain Confidence</h3>
                 <h3>Stay In Your Home Longer</h3>
               </div>
-              <form action="get"></form>
+              <form action="">
+                <input
+                  className="input"
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="Full Name"
+                />
+                <br />
+                <input
+                  className="input"
+                  type="text"
+                  id="usersPhone"
+                  name="usersPhone"
+                  placeholder="Phone"
+                />
+                <br />
+                <input
+                  className="input"
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="E-mail"
+                />
+                <br />
+                <input
+                  className="input"
+                  type="text"
+                  id="zipcode"
+                  name="zipcode"
+                  placeholder="Your Zip"
+                />
+                <br />
+                <input
+                  className="input"
+                  type="button"
+                  id="information"
+                  name="information"
+                  placeholder="Request More Information"
+                />
+                <h6>100% PRIVACY GUARANTEED</h6>
+                <h6>WE DO NOT SELL OR RENT YOUR PERSONAL INFORMATION</h6>
+              </form>
             </div>
           </div>
         </div>
