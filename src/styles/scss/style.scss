@@ -1,14 +1,7 @@
 @import "./includes/main";
+@import "./includes/finance";
 
 body {
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(15, 54, 161),
-    rgb(6, 133, 207)
-  );
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
 }
