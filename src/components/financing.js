@@ -20,7 +20,7 @@ export const Finance = () => {
       <div className="top">
         <div className="container">
           <div className="row">
-            <div className="col-6">
+            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 left">
               <div className="price">
                 AS LOW AS <br /> $99 mo
               </div>
@@ -32,7 +32,7 @@ export const Finance = () => {
                 />
               </div>
             </div>
-            <div className="col-6">
+            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 right">
               <div className="content">
                 <div className="form-text">GET A FREE QUOTE</div>
                 <form action="">
@@ -40,38 +40,38 @@ export const Finance = () => {
                     className="input"
                     type="text"
                     name="firstName"
-                    placeholder="First Name"
+                    placeholder="First Name *"
                   />
                   <br />
                   <input
                     className="input"
                     type="text"
                     name="lastName"
-                    placeholder="Last Name"
+                    placeholder="Last Name *"
                   />
                   <br />
                   <input
                     className="input"
                     type="text"
                     name="usersPhone"
-                    placeholder="Phone"
+                    placeholder="Phone *"
                   />
                   <br />
                   <input
                     className="input"
                     type="text"
                     name="email"
-                    placeholder="E-mail"
+                    placeholder="E-mail *"
                   />
                   <br />
                   <input
                     className="input"
                     type="text"
                     name="zipcode"
-                    placeholder="Your Zip"
+                    placeholder="Your Zip *"
                   />
                   <br />
-                  <button className="btn">GET QUOTE</button>
+                  <button className="quote-btn">GET QUOTE</button>
                 </form>
               </div>
             </div>

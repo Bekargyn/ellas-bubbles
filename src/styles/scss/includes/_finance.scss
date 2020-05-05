@@ -5,9 +5,55 @@
 
   .top {
     background-image: url("../../../images/bg1.jpg");
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+
+    .container {
+      text-align: center;
+
+      .right {
+        display: flex;
+        justify-content: center;
+
+        .content {
+          background-color: rgb(44, 42, 42);
+          width: 80%;
+          margin: 0;
+          padding: 0;
+
+          .form-text {
+            font-style: italic;
+            font-family: Impact, Haettenschweiler, "Arial Narrow Bold",
+              sans-serif;
+            font-weight: bolder;
+            padding: 20px;
+            color: #fff;
+          }
+
+          .input {
+            padding: 10px;
+            margin: 15px;
+            width: 90%;
+
+            &::placeholder {
+              color: #000;
+              text-transform: uppercase;
+              font-weight: bolder;
+            }
+          }
+
+          .quote-btn {
+            background: rgb(75, 135, 212);
+            color: white;
+            margin-bottom: 30px;
+            border: 2px solid #fff;
+            border-radius: 20px;
+            padding: 2px 25px;
+            box-shadow: 0 0 1px 1px rgba(253, 255, 255, 0.952);
+          }
+        }
+      }
+    }
   }
 
   .middle {
@@ -17,10 +63,12 @@
       padding: 15px;
       font-family: Arial, Helvetica, sans-serif;
       font-weight: bold;
+      min-height: 80px;
     }
 
     .description {
       padding: 15px;
+      min-height: 300px;
     }
 
     .view-btn {
@@ -45,7 +93,6 @@
 
   .bottom {
     background-image: url("../../../images/bg2.jpg");
-    background-attachment: fixed;
     background-repeat: no-repeat;
     height: 640px;
     background-size: cover;
