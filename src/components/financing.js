@@ -77,15 +77,17 @@ export const Finance = () => {
             </div>
           </div>
           <div className="row">
-            <h2>HOW MUCH DOES A WALK-IN TUB COST?</h2>
-            <h3>
-              Now you can own an Ella's Brand Walk-in Bathtub for as little as
-              $99 per/month
-            </h3>
-            <h3>
-              Get your <b>no-obligation quote</b> and let our specialists help
-              you choose the tub that is right for you
-            </h3>
+            <div className="top-text">
+              <h2>HOW MUCH DOES A WALK-IN TUB COST?</h2>
+              <h3>
+                Now you can own an Ella's Brand Walk-in Bathtub for as little as
+                $99 per/month
+              </h3>
+              <h3>
+                Get your <b> no-obligation quote </b> and let our specialists
+                help you choose the tub that is right for you
+              </h3>
+            </div>
           </div>
         </div>
       </div>
@@ -167,7 +169,19 @@ export const Finance = () => {
       </div>
       <div className="bottom"></div>
       <footer>
-        <div className="container"></div>
+        <div className="container">
+          <div className="logo">
+            <img className="img-fluid" src="../../images/logo.png" alt="logo" />
+          </div>
+          <div className="info">
+            <h6>2101 S. Carpenter St. Chicago, IL, 60608</h6>
+            <h6>Phone: 1-877-769-1905</h6>
+            <h6>Email: info@ellasbubbles.com</h6>
+          </div>
+          <div className="privete">
+            <p>PRIVATE POLICY</p>
+          </div>
+        </div>
       </footer>
     </div>
   );
