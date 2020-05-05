@@ -1,0 +1,53 @@
+.finance {
+  header {
+    background: white;
+  }
+
+  .top {
+    background-image: url("../../../images/bg1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .middle {
+    text-align: center;
+
+    .nameTag {
+      padding: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+
+    .description {
+      padding: 15px;
+    }
+
+    .view-btn {
+      display: flex;
+      justify-content: center;
+      align-content: flex-end;
+      padding: 10px;
+
+      button {
+        background: rgb(25, 150, 223);
+        color: white;
+        border: 1px solid white;
+        border-radius: 18px;
+        padding: 10px 25px;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-style: italic;
+      }
+    }
+  }
+
+  .bottom {
+    background-image: url("../../../images/bg2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 640px;
+    background-size: cover;
+  }
+}
