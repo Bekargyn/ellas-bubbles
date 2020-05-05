@@ -5,11 +5,47 @@
 
   .top {
     background-image: url("../../../images/bg1.jpg");
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 
     .container {
       text-align: center;
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        .price {
+          background: rgba(66, 144, 56, 0.815);
+          border-radius: 50%;
+          border: 1px solid #fff;
+          width: 80px;
+          height: 80px;
+          font-size: 8px;
+          justify-content: center;
+          padding: 20px 5px 10px 5px;
+          color: #fff;
+          font-weight: bolder;
+          margin-right: -100px;
+          z-index: 1;
+
+          span {
+            font-size: 20px;
+          }
+        }
+
+        .images {
+          margin-right: -100px;
+          z-index: 99;
+
+          img {
+            max-width: 300px;
+          }
+        }
+      }
 
       .right {
         display: flex;
@@ -109,6 +145,7 @@
   .bottom {
     background-image: url("../../../images/bg2.jpg");
     background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 640px;
     background-size: cover;
   }

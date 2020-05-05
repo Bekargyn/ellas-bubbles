@@ -22,7 +22,7 @@ export const Finance = () => {
           <div className="row">
             <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 left">
               <div className="price">
-                AS LOW AS <br /> $99 mo
+                AS LOW AS <span>$99</span> mo
               </div>
               <div className="images">
                 <img
