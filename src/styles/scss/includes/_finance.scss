@@ -112,4 +112,36 @@
     height: 640px;
     background-size: cover;
   }
+
+  footer {
+    .container {
+      display: flex;
+      flex-direction: row;
+
+      .logo {
+        padding: 15px;
+
+        img {
+          max-width: 140px;
+          height: auto;
+        }
+      }
+
+      .info {
+        flex-grow: 2;
+        border-left: 1px solid gray;
+        padding: 15px;
+      }
+
+      .private {
+        display: flex;
+        align-items: flex-end;
+
+        p {
+          text-decoration: underline;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
 }

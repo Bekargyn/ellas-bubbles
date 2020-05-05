@@ -178,7 +178,7 @@ export const Finance = () => {
             <h6>Phone: 1-877-769-1905</h6>
             <h6>Email: info@ellasbubbles.com</h6>
           </div>
-          <div className="privete">
+          <div className="private">
             <p>PRIVATE POLICY</p>
           </div>
         </div>
