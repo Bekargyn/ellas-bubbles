@@ -2,6 +2,12 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 
 export const Finance = () => {
+  function goToTop(e) {
+    e.preventDefault();
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
   return (
     <div className="finance">
       <header>
@@ -174,12 +180,22 @@ export const Finance = () => {
         </div>
       </div>
       <div className="bottom">
-        <img src="../../images/arrow_up.png" alt="" />
+        <input
+          onClick={goToTop}
+          type="image"
+          src="../../images/arrow_up.png"
+          alt=""
+        />
       </div>
       <footer>
         <div className="container">
           <div className="logo">
-            <img className="img-fluid" src="../../images/logo.png" alt="logo" />
+            <img
+              type="button"
+              className="img-fluid"
+              src="../../images/logo.png"
+              alt="logo"
+            />
           </div>
           <div className="info">
             <h6>2101 S. Carpenter St. Chicago, IL, 60608</h6>

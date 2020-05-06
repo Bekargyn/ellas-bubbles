@@ -182,8 +182,9 @@
     justify-content: center;
     align-items: flex-end;
 
-    img {
+    input {
       max-width: 60px;
+      border-style: none;
     }
   }
 
@@ -231,6 +232,22 @@
           .price,
           .images {
             margin-right: 20px;
+          }
+        }
+      }
+    }
+
+    .bottom {
+      display: none;
+    }
+
+    header {
+      .col-8 {
+        .phone {
+          margin: 20px;
+
+          h4 {
+            font-size: 0.8em;
           }
         }
       }
