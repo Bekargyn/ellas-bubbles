@@ -100,7 +100,7 @@ export const Finance = () => {
       <div className="middle">
         <div className="container">
           <div className="row">
-            <div className="col-4">
+            <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
               <div className="img-col1">
                 <img
                   className="img-fluid"
@@ -125,7 +125,7 @@ export const Finance = () => {
                 <button>VIEW DETAILS</button>
               </div>
             </div>
-            <div className="col-4">
+            <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
               <div className="img-col1">
                 <img
                   className="img-fluid"
@@ -148,7 +148,7 @@ export const Finance = () => {
                 <button>VIEW DETAILS</button>
               </div>
             </div>
-            <div className="col-4">
+            <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
               <div className="img-col1">
                 <img
                   className="img-fluid"
