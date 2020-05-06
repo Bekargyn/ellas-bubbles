@@ -1,6 +1,30 @@
 .finance {
   header {
-    background: white;
+    background: #fff;
+
+    .col-4 {
+      img {
+        max-width: 140px;
+        height: auto;
+        margin: 25px;
+      }
+    }
+
+    .col-8 {
+      display: flex;
+      justify-content: flex-end;
+
+      .phone {
+        margin: 20px 50px 20px 20px;
+
+        h4 {
+          font-size: 1em;
+          padding: 0 10px;
+          font-weight: bolder;
+          text-align: right;
+        }
+      }
+    }
   }
 
   .top {
@@ -148,6 +172,13 @@
     background-attachment: fixed;
     height: 640px;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    img {
+      max-width: 60px;
+    }
   }
 
   footer {

@@ -5,14 +5,20 @@ export const Finance = () => {
   return (
     <div className="finance">
       <header>
-        <div className="row">
-          <div className="col-4">
-            <img className="img-fluid" src="../../images/logo.png" alt="logo" />
-          </div>
-          <div className="col-8">
-            <div className="phone">
-              <img src="../../images/phone.png" alt="phone" />
-              <h4>(800) 480-6850</h4>
+        <div className="container">
+          <div className="row">
+            <div className="col-4">
+              <img
+                className="img-fluid"
+                src="../../images/logo.png"
+                alt="logo"
+              />
+            </div>
+            <div className="col-8">
+              <div className="phone">
+                <h4>CONTACT</h4>
+                <h4>+ (800) 480-6850</h4>
+              </div>
             </div>
           </div>
         </div>
@@ -167,7 +173,9 @@ export const Finance = () => {
           </div>
         </div>
       </div>
-      <div className="bottom"></div>
+      <div className="bottom">
+        <img src="../../images/arrow_up.png" alt="" />
+      </div>
       <footer>
         <div className="container">
           <div className="logo">
