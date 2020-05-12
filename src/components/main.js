@@ -1,6 +1,11 @@
 import React from "react";
 
 export const Main = () => {
+  function requestInformation(e) {
+    e.preventDefault();
+    console.log("click click");
+  }
+
   return (
     <div className="main">
       <div className="row">
@@ -9,14 +14,16 @@ export const Main = () => {
         </div>
         <div className="col-8">
           <div className="phone">
-            <img src="../../images/phone.png" alt="phone" />
-            <h4>(800) 480-6850</h4>
+            <a href="tel:18004806850" target="_blank" rel="noopener noreferrer">
+              <img src="../../images/phone.png" alt="phone" />
+              <h4>(800) 480-6850</h4>
+            </a>
           </div>
         </div>
       </div>
       <div className="container">
         <div className="row">
-          <div className="col-lg-6 col-md-6 col-sm-12">
+          <div className="col-lg-6 col-md-12 col-sm-12">
             <div className="brand">
               <h1>
                 Ella Brand <br />
@@ -48,7 +55,7 @@ export const Main = () => {
               />
             </div>
           </div>
-          <div className="col-lg-6 col-md-6 col-sm-12 my-3">
+          <div className="col-lg-6 col-md-12 col-sm-12 my-3">
             <div className="content">
               <div className="form-text">
                 <h2>Regain Confidence</h2>
@@ -87,7 +94,13 @@ export const Main = () => {
                   placeholder="Your Zip"
                 />
                 <br />
-                <button className="btn">Request More Information</button>
+                <button
+                  type="submit"
+                  className="btn"
+                  onClick={requestInformation}
+                >
+                  Request More Information
+                </button>
                 <h5>100% PRIVACY GUARANTEED</h5>
                 <h6>WE DO NOT SELL OR RENT YOUR PERSONAL INFORMATION</h6>
               </form>
