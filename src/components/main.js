@@ -8,22 +8,20 @@ export const Main = () => {
 
   return (
     <div className="main">
-      <div className="row header">
-        <div className="col-4">
+      <div className="header">
+        <div className="logo">
           <img className="img-fluid" src="../../images/logo.png" alt="logo" />
         </div>
-        <div className="col-8">
-          <div className="phone">
-            <a href="tel:18004806850" target="_blank" rel="noopener noreferrer">
-              <img src="../../images/phone.png" alt="phone" />
-              <h4>(800) 480-6850</h4>
-            </a>
-          </div>
+        <div className="phone">
+          <a href="tel:18004806850" target="_blank" rel="noopener noreferrer">
+            <img src="../../images/phone.png" alt="phone" />
+            (800) 480-6850
+          </a>
         </div>
       </div>
       <div className="container">
         <div className="row">
-          <div className="col-lg-6 col-md-12 col-sm-12">
+          <div className="col-lg-6 col-md-12 col-sm-12 left">
             <div className="brand">
               <h1>
                 Ella Brand <br />
@@ -33,7 +31,7 @@ export const Main = () => {
             <div className="text">
               <h2 className="text2">Financing</h2>
               <h3 className="text3">As low as $99.00 per/month</h3>
-              <h3>with approved credit</h3>
+              <h3 className="text3">with approved credit</h3>
             </div>
             <div className="images">
               <img
@@ -83,7 +81,7 @@ export const Main = () => {
                   type="text"
                   id="email"
                   name="email"
-                  placeholder="E-mail"
+                  placeholder="E-Mail"
                 />
                 <br />
                 <input

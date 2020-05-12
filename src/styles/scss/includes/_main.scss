@@ -12,37 +12,31 @@
   .header {
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: space-between;
 
-    .col-4 {
+    .logo {
       img {
         max-width: 140px;
         height: auto;
-        margin: 25px;
+        margin: 25px 0 25px 25px;
       }
     }
 
-    .col-8 {
+    .phone {
       display: flex;
-      justify-content: flex-end;
+      margin: 30px;
 
-      .phone {
+      a {
+        color: #fff;
         display: flex;
-        margin: 30px;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
 
-        a {
-          color: #fff;
-          display: flex;
-
-          img {
-            max-height: 30px;
-          }
-
-          h4 {
-            font-size: 24px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            padding: 0 10px;
-            font-weight: bold;
-          }
+        img {
+          max-height: 35px;
+          margin: 5px 20px;
         }
       }
     }
@@ -52,28 +46,38 @@
     width: 90%;
 
     // first column
-    .brand {
-      h1 {
-        font-size: 60px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
-        text-shadow: 3px 3px 3px #000;
-      }
+    .left {
+      .brand {
+        h1 {
+          font-size: 60px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bold;
+          text-shadow: 3px 3px 3px #000;
+        }
 
-      mark {
-        display: inline-block;
-        background-color: transparent;
-        color: rgb(236, 137, 23);
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
-        border-bottom: 5px solid rgb(236, 137, 23);
-        padding: 5px;
-        margin: 0 0 10px;
+        mark {
+          display: inline-block;
+          background-color: transparent;
+          color: rgb(236, 137, 23);
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: bold;
+          border-bottom: 5px solid rgb(236, 137, 23);
+          padding: 5px;
+          margin: 0 0 10px;
+        }
       }
-
-      .text2,
-      .text3 {
-        font-size: 4em;
+      .text {
+        .text2 {
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: 36px;
+          font-weight: bold;
+        }
+        .text3 {
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: 28px;
+          font-weight: bold;
+          line-height: 150%;
+        }
       }
     }
 
@@ -82,7 +86,7 @@
       border-radius: 40px;
       background-image: linear-gradient(
         to bottom right,
-        rgb(13, 60, 189),
+        rgb(19, 94, 163),
         rgb(18, 147, 221)
       );
       text-align: center;
@@ -150,6 +154,18 @@
   }
 
   @media (max-width: 676px) {
+    .header {
+      .phone {
+        a {
+          font-size: 12px;
+
+          img {
+            margin: 5px;
+          }
+        }
+      }
+    }
+
     .container {
       .content {
         .form-text {
