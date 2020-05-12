@@ -1,42 +1,48 @@
 .main {
   background-image: linear-gradient(
     to bottom right,
-    rgb(15, 54, 161),
-    rgb(6, 133, 207)
+    rgb(10, 40, 124),
+    rgb(18, 147, 221)
   );
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
   min-height: 100vh;
 
-  .col-4 {
-    img {
-      max-width: 140px;
-      height: auto;
-      margin: 25px;
+  .header {
+    margin: 0;
+    padding: 0;
+
+    .col-4 {
+      img {
+        max-width: 140px;
+        height: auto;
+        margin: 25px;
+      }
     }
-  }
 
-  .col-8 {
-    display: flex;
-    justify-content: flex-end;
-
-    .phone {
+    .col-8 {
       display: flex;
-      margin: 20px;
+      justify-content: flex-end;
 
-      a {
-        color: #fff;
+      .phone {
         display: flex;
+        margin: 30px;
 
-        img {
-          max-height: 30px;
-        }
+        a {
+          color: #fff;
+          display: flex;
 
-        h4 {
-          font-size: 1em;
-          padding: 0 10px;
-          font-weight: bolder;
+          img {
+            max-height: 30px;
+          }
+
+          h4 {
+            font-size: 24px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 0 10px;
+            font-weight: bold;
+          }
         }
       }
     }
@@ -55,12 +61,14 @@
       }
 
       mark {
+        display: inline-block;
         background-color: transparent;
         color: rgb(236, 137, 23);
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
-        text-decoration: underline;
-        padding: 10px;
+        border-bottom: 5px solid rgb(236, 137, 23);
+        padding: 5px;
+        margin: 0 0 10px;
       }
 
       .text2,
@@ -71,20 +79,23 @@
 
     // second column
     .content {
-      border-radius: 24px;
+      border-radius: 40px;
       background-image: linear-gradient(
         to bottom right,
-        rgb(29, 72, 190),
-        rgb(25, 129, 189)
+        rgb(13, 60, 189),
+        rgb(18, 147, 221)
       );
       text-align: center;
-      box-shadow: 0 0 5px 5px rgba(20, 20, 20, 0.2);
+      box-shadow: 0 0 5px 5px rgba(20, 20, 20, 0.1);
       padding: 10px;
 
       .form-text {
+        padding: 25px;
+
         h2 {
-          font-family: Arial, Helvetica, sans-serif;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
           font-weight: bold;
+          font-size: 28px;
         }
       }
 
@@ -134,6 +145,22 @@
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
         letter-spacing: 1px;
+      }
+    }
+  }
+
+  @media (max-width: 676px) {
+    .container {
+      .content {
+        .form-text {
+          h2 {
+            font-size: 20px;
+          }
+        }
+
+        .btn {
+          font-size: 16px;
+        }
       }
     }
   }

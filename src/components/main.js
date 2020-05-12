@@ -8,7 +8,7 @@ export const Main = () => {
 
   return (
     <div className="main">
-      <div className="row">
+      <div className="row header">
         <div className="col-4">
           <img className="img-fluid" src="../../images/logo.png" alt="logo" />
         </div>
