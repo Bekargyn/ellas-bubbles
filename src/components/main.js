@@ -17,7 +17,7 @@ export const Main = () => {
     <div className="main">
       <div className="header">
         <div className="logo">
-          <img className="img-fluid" src="../../images/logo.png" alt="logo" />
+          <img className="img-fluid" src="../../images/logo2.jpg" alt="logo" />
         </div>
         <div className="phone">
           <a href="tel:18004806850" target="_blank" rel="noopener noreferrer">
