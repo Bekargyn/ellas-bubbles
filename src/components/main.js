@@ -1,4 +1,11 @@
 import React from "react";
+import SliderView from "./slider";
+import styled from "styled-components";
+
+const SlideWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 
 export const Main = () => {
   function requestInformation(e) {
@@ -34,11 +41,15 @@ export const Main = () => {
               <h3 className="text3">with approved credit</h3>
             </div>
             <div className="images">
-              <img
+              <SlideWrapper>
+                <SliderView />
+              </SlideWrapper>
+
+              {/*<img
                 className="img-fluid"
                 src="../../images/slide1.png"
                 alt="bath"
-              />
+              />*/}
             </div>
             <div className="arrow">
               <img
