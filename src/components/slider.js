@@ -1,37 +1,57 @@
 import React from "react";
-import styled from "styled-components";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-const Wrapper = styled.div`
-  width: 100%;
-`;
+function Arrow(props) {
+  let className = props.type === "next" ? "nextArrow" : "prevArrow";
+  className += " arrow";
+  const char = props.type === "next" ? "👉" : "👈";
+  return (
+    <span className={className} onClick={props.onClick}>
+      {char}
+    </span>
+  );
+}
 
-const Page = styled.div`
-  width: 100%;
-`;
+function customPaging(i) {
+  return <span>{i + 1}</span>;
+}
 
-export default class SliderView extends React.Component {
-  render() {
-    return (
-      <Wrapper>
-        <Slider
-          speed={500}
-          slidesToShow={1}
-          slidesToScroll={1}
-          infinite={false}
-          dots={true}
-        >
-          <Page>
-            <img
-              className="img-fluid"
-              src="../../images/slide1.png"
-              alt="bath"
-            />
-          </Page>
-          <Page>Page two</Page>
-          <Page>Page three</Page>
-        </Slider>
-      </Wrapper>
-    );
-  }
+function appendDots(dots) {
+  return (
+    <div style={{ backgroundColor: "#eee" }}>
+      <ul style={{ margin: "3px" }}> {dots} </ul>
+    </div>
+  );
+}
+
+export default function App() {
+  const images = [
+    <img className="img-fluid" src="../../images/slide1.png" alt="bath" />,
+    <img className="img-fluid" src="../../images/slide1.png" alt="bath" />,
+    <img className="img-fluid" src="../../images/slide1.png" alt="bath" />,
+    <img className="img-fluid" src="../../images/slide1.png" alt="bath" />,
+  ];
+
+  const renderSlides = () =>
+    images.map((num) => (
+      <div>
+        <h3> {num}</h3>
+      </div>
+    ));
+
+  return (
+    <div className="App">
+      <Slider
+        nextArrow={<Arrow type="next" />}
+        prevArrow={<Arrow type="prev" />}
+        dots={true}
+        customPaging={customPaging}
+        appendDots={appendDots}
+      >
+        {renderSlides()}
+      </Slider>
+    </div>
+  );
 }

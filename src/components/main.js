@@ -1,5 +1,5 @@
 import React from "react";
-import SliderView from "./slider";
+import ImageSlider from "./slider";
 
 export const Main = () => {
   function requestInformation(e) {
@@ -35,11 +35,13 @@ export const Main = () => {
               <h3 className="text3">with approved credit</h3>
             </div>
             <div className="images">
+              <ImageSlider />
+              {/*}
               <img
                 className="img-fluid"
                 src="../../images/slide1.png"
                 alt="bath"
-              />
+  />*/}
             </div>
             <div className="arrow">
               <img
