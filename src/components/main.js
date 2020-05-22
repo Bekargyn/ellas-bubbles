@@ -1,11 +1,5 @@
 import React from "react";
 import SliderView from "./slider";
-import styled from "styled-components";
-
-const SlideWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-`;
 
 export const Main = () => {
   function requestInformation(e) {
@@ -17,7 +11,7 @@ export const Main = () => {
     <div className="main">
       <div className="header">
         <div className="logo">
-          <img className="img-fluid" src="../../images/logo2.jpg" alt="logo" />
+          <img className="img-fluid" src="../../images/logo.png" alt="logo" />
         </div>
         <div className="phone">
           <a href="tel:18004806850" target="_blank" rel="noopener noreferrer">
@@ -41,15 +35,11 @@ export const Main = () => {
               <h3 className="text3">with approved credit</h3>
             </div>
             <div className="images">
-              <SlideWrapper>
-                <SliderView />
-              </SlideWrapper>
-
-              {/*<img
+              <img
                 className="img-fluid"
                 src="../../images/slide1.png"
                 alt="bath"
-              />*/}
+              />
             </div>
             <div className="arrow">
               <img
