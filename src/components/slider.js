@@ -37,7 +37,7 @@ export default function App() {
   const renderSlides = () =>
     images.map((num) => (
       <div>
-        <h3> {num}</h3>
+        <h3>Slide {num}</h3>
       </div>
     ));
 

@@ -1,11 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ImageSlider from "./slider";
+import $ from "jquery";
 
 export const Main = () => {
-  function requestInformation(e) {
-    e.preventDefault();
-    console.log("click click");
-  }
+  useEffect(() => {
+    console.log($("form").length);
+
+    $("form").on("submit", (e) => {
+      e.preventDefault();
+
+      const fullName = $("#fullName").val().trim();
+      const phone = $("#phone").val().trim();
+      const email = $("#email").val().trim();
+      const zipcode = $("#zipcode").val().trim();
+
+      const data = {
+        fullName,
+        email,
+        phone,
+        zipcode,
+      };
+      $.post("http://localhost:8080/send", data, function () {
+        console.log("Server received our data!!!");
+        $("#fullName").val("");
+        $("#phone").val("");
+        $("#email").val("");
+        $("#zipcode").val("");
+        alert("Thank you! Your request has been sent!");
+      });
+    });
+  }, []);
 
   return (
     <div className="main">
@@ -36,24 +60,6 @@ export const Main = () => {
             </div>
             <div className="images">
               <ImageSlider />
-              {/*}
-              <img
-                className="img-fluid"
-                src="../../images/slide1.png"
-                alt="bath"
-  />*/}
-            </div>
-            <div className="arrow">
-              <img
-                className="img-fluid"
-                src="../../images/arrow_active.png"
-                alt=""
-              />
-              <img
-                className="img-fluid"
-                src="../../images/arrow_active2.png"
-                alt=""
-              />
             </div>
           </div>
           <div className="col-lg-6 col-md-12 col-sm-12 my-3">
@@ -74,8 +80,8 @@ export const Main = () => {
                 <input
                   className="input"
                   type="text"
-                  id="usersPhone"
-                  name="usersPhone"
+                  id="phone"
+                  name="phone"
                   placeholder="Phone"
                 />
                 <br />
@@ -95,11 +101,7 @@ export const Main = () => {
                   placeholder="Your Zip"
                 />
                 <br />
-                <button
-                  type="submit"
-                  className="btn"
-                  onClick={requestInformation}
-                >
+                <button type="submit" value="submit" className="btn">
                   Request More Information
                 </button>
                 <h5>100% PRIVACY GUARANTEED</h5>

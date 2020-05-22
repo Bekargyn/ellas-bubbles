@@ -1,11 +1,10 @@
 .main {
   background-image: linear-gradient(
     to bottom right,
+    /*
     rgb(4, 5, 5),
-    rgb(62, 69, 82) /*
-    rgb(10, 40, 124),
+    rgb(62, 69, 82) */ rgb(10, 40, 124),
     rgb(18, 147, 221)
-    */
   );
   background-repeat: no-repeat;
   background-size: cover;
@@ -89,12 +88,12 @@
       border-radius: 40px;
       background-image: linear-gradient(
         to bottom right,
+        /*
         rgb(30, 32, 36),
         rgb(47, 52, 65)
-          /*
-        rgb(19, 94, 163),
+          */
+          rgb(19, 94, 163),
         rgb(18, 147, 221)
-        */
       );
       text-align: center;
       box-shadow: 0 0 5px 5px rgba(20, 20, 20, 0.1);
