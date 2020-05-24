@@ -26,7 +26,7 @@ app.post("/send", (req, res) => {
 
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
-    host: "https://react-portfolio1.herokuapp.com/",
+    host: "",
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {

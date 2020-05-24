@@ -20,7 +20,7 @@ export const Main = () => {
         phone,
         zipcode,
       };
-      $.post("http://localhost:8080/send", data, function () {
+      $.post("https://ellas-bubbles.herokuapp.com/", data, function () {
         console.log("Server received our data!!!");
         if (fullName === "" || phone === "" || email === "" || zipcode === "") {
           alert("Please, fill all inputs!");
