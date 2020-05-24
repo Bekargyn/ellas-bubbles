@@ -40,9 +40,9 @@ app.post("/send", (req, res) => {
 
   // send mail with defined transport object
   let mailOptions = {
-    from: '"Portolio" <>', // sender address
+    from: "", // sender address
     to: "", // list of receivers
-    subject: "Message from portfolio", // Subject line
+    subject: "Message", // Subject line
     text: "Hello world?", // plain text body
     html: output, // html body
   };
