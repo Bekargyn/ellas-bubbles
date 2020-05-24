@@ -22,6 +22,10 @@ export const Main = () => {
       };
       $.post("http://localhost:8080/send", data, function () {
         console.log("Server received our data!!!");
+        if (fullName === "" || phone === "" || email === "" || zipcode === "") {
+          alert("Please, fill all inputs!");
+          return false;
+        }
         $("#fullName").val("");
         $("#phone").val("");
         $("#email").val("");
