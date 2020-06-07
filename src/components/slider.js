@@ -7,11 +7,11 @@ function Arrow(props) {
   const next = <img src="../../images/arrow_active.png" alt="next" />;
   const prev = <img src="../../images/arrow_active2.png" alt="previous" />;
 
-  let className = props.type === "next" ? "nextArrow" : "prevArrow";
-  className += " arrow";
+  let scroll = props.type === "next" ? "nextArrow" : "prevArrow";
+  scroll += " arrow";
   const char = props.type === "next" ? next : prev;
   return (
-    <span className={className} onClick={props.onClick}>
+    <span className={scroll} onClick={props.onClick}>
       {char}
     </span>
   );
